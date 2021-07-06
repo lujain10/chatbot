@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>روبوت الاستقبال</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+  <div class="cotainer-fluid">
+        <nav class="navbar navbar-inverse">
+            <ul class="navbar navbar-nav navbar-right">
+              <img height="100px" src="images/logo.png">
+            </ul>
+        </nav>
+  </div>
+  <div class="cotainer-fluid" >
+      <div class="row">
+        <h1>تقييم الاستقبال :</h1>
+      </div>
+  </div>
+  <script>
+  window.watsonAssistantChatOptions = {
+      integrationID: "e10d61d8-a9ce-472e-9e8b-9f75bf124504", // The ID of this integration.
+      region: "eu-gb", // The region your integration is hosted in.
+      serviceInstanceID: "53f34b79-fc9c-49ea-8a71-6d270ea5609b", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+    };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+    document.head.appendChild(t);
+  });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
